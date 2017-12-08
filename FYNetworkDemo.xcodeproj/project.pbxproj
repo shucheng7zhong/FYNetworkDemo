@@ -13,26 +13,25 @@
 		84B9F6BE1FDA39C900F5AC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B9F6BD1FDA39C900F5AC27 /* Assets.xcassets */; };
 		84B9F6C11FDA39C900F5AC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B9F6BF1FDA39C900F5AC27 /* LaunchScreen.storyboard */; };
 		84B9F6C41FDA39C900F5AC27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9F6C31FDA39C900F5AC27 /* main.m */; };
-		84B9F6CE1FDA39C900F5AC27 /* FYNetworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9F6CD1FDA39C900F5AC27 /* FYNetworkDemoTests.m */; };
-		84B9F6D91FDA39C900F5AC27 /* FYNetworkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9F6D81FDA39C900F5AC27 /* FYNetworkDemoUITests.m */; };
+		84B9F6EC1FDA622400F5AC27 /* FYAFNetworkingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9F6EB1FDA622400F5AC27 /* FYAFNetworkingClient.m */; };
+		84B9F6EF1FDA672100F5AC27 /* FYNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B9F6EE1FDA672100F5AC27 /* FYNetworkHandler.m */; };
+		84B9F6F11FDA786C00F5AC27 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B9F6E71FDA5F5000F5AC27 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84B9F6F41FDA89E200F5AC27 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B9F6E71FDA5F5000F5AC27 /* AFNetworking.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		84B9F6CA1FDA39C900F5AC27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84B9F6A91FDA39C900F5AC27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B9F6B01FDA39C900F5AC27;
-			remoteInfo = FYNetworkDemo;
+/* Begin PBXCopyFilesBuildPhase section */
+		84B9F6F21FDA786C00F5AC27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84B9F6F11FDA786C00F5AC27 /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B9F6D51FDA39C900F5AC27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84B9F6A91FDA39C900F5AC27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B9F6B01FDA39C900F5AC27;
-			remoteInfo = FYNetworkDemo;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		84B9F6B11FDA39C900F5AC27 /* FYNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,12 +44,15 @@
 		84B9F6C01FDA39C900F5AC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B9F6C21FDA39C900F5AC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B9F6C31FDA39C900F5AC27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84B9F6C91FDA39C900F5AC27 /* FYNetworkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYNetworkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B9F6CD1FDA39C900F5AC27 /* FYNetworkDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYNetworkDemoTests.m; sourceTree = "<group>"; };
 		84B9F6CF1FDA39C900F5AC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84B9F6D41FDA39C900F5AC27 /* FYNetworkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYNetworkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B9F6D81FDA39C900F5AC27 /* FYNetworkDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYNetworkDemoUITests.m; sourceTree = "<group>"; };
 		84B9F6DA1FDA39C900F5AC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B9F6E71FDA5F5000F5AC27 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
+		84B9F6EA1FDA622400F5AC27 /* FYAFNetworkingClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYAFNetworkingClient.h; sourceTree = "<group>"; };
+		84B9F6EB1FDA622400F5AC27 /* FYAFNetworkingClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYAFNetworkingClient.m; sourceTree = "<group>"; };
+		84B9F6ED1FDA672100F5AC27 /* FYNetworkHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYNetworkHandler.h; sourceTree = "<group>"; };
+		84B9F6EE1FDA672100F5AC27 /* FYNetworkHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYNetworkHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,20 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B9F6C61FDA39C900F5AC27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B9F6D11FDA39C900F5AC27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				84B9F6F41FDA89E200F5AC27 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +74,7 @@
 				84B9F6CC1FDA39C900F5AC27 /* FYNetworkDemoTests */,
 				84B9F6D71FDA39C900F5AC27 /* FYNetworkDemoUITests */,
 				84B9F6B21FDA39C900F5AC27 /* Products */,
+				84B9F6F31FDA89E200F5AC27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				84B9F6B11FDA39C900F5AC27 /* FYNetworkDemo.app */,
-				84B9F6C91FDA39C900F5AC27 /* FYNetworkDemoTests.xctest */,
-				84B9F6D41FDA39C900F5AC27 /* FYNetworkDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +89,7 @@
 		84B9F6B31FDA39C900F5AC27 /* FYNetworkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84B9F6E91FDA610A00F5AC27 /* FYNetwork */,
 				84B9F6B41FDA39C900F5AC27 /* AppDelegate.h */,
 				84B9F6B51FDA39C900F5AC27 /* AppDelegate.m */,
 				84B9F6B71FDA39C900F5AC27 /* ViewController.h */,
@@ -110,6 +99,7 @@
 				84B9F6BF1FDA39C900F5AC27 /* LaunchScreen.storyboard */,
 				84B9F6C21FDA39C900F5AC27 /* Info.plist */,
 				84B9F6C31FDA39C900F5AC27 /* main.m */,
+				84B9F6E61FDA5F5000F5AC27 /* AFNetworking */,
 			);
 			path = FYNetworkDemo;
 			sourceTree = "<group>";
@@ -132,6 +122,32 @@
 			path = FYNetworkDemoUITests;
 			sourceTree = "<group>";
 		};
+		84B9F6E61FDA5F5000F5AC27 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				84B9F6E71FDA5F5000F5AC27 /* AFNetworking.framework */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		84B9F6E91FDA610A00F5AC27 /* FYNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				84B9F6EA1FDA622400F5AC27 /* FYAFNetworkingClient.h */,
+				84B9F6EB1FDA622400F5AC27 /* FYAFNetworkingClient.m */,
+				84B9F6ED1FDA672100F5AC27 /* FYNetworkHandler.h */,
+				84B9F6EE1FDA672100F5AC27 /* FYNetworkHandler.m */,
+			);
+			path = FYNetwork;
+			sourceTree = "<group>";
+		};
+		84B9F6F31FDA89E200F5AC27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +158,7 @@
 				84B9F6AD1FDA39C900F5AC27 /* Sources */,
 				84B9F6AE1FDA39C900F5AC27 /* Frameworks */,
 				84B9F6AF1FDA39C900F5AC27 /* Resources */,
+				84B9F6F21FDA786C00F5AC27 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,42 +168,6 @@
 			productName = FYNetworkDemo;
 			productReference = 84B9F6B11FDA39C900F5AC27 /* FYNetworkDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		84B9F6C81FDA39C900F5AC27 /* FYNetworkDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84B9F6E01FDA39C900F5AC27 /* Build configuration list for PBXNativeTarget "FYNetworkDemoTests" */;
-			buildPhases = (
-				84B9F6C51FDA39C900F5AC27 /* Sources */,
-				84B9F6C61FDA39C900F5AC27 /* Frameworks */,
-				84B9F6C71FDA39C900F5AC27 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84B9F6CB1FDA39C900F5AC27 /* PBXTargetDependency */,
-			);
-			name = FYNetworkDemoTests;
-			productName = FYNetworkDemoTests;
-			productReference = 84B9F6C91FDA39C900F5AC27 /* FYNetworkDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		84B9F6D31FDA39C900F5AC27 /* FYNetworkDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84B9F6E31FDA39C900F5AC27 /* Build configuration list for PBXNativeTarget "FYNetworkDemoUITests" */;
-			buildPhases = (
-				84B9F6D01FDA39C900F5AC27 /* Sources */,
-				84B9F6D11FDA39C900F5AC27 /* Frameworks */,
-				84B9F6D21FDA39C900F5AC27 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84B9F6D61FDA39C900F5AC27 /* PBXTargetDependency */,
-			);
-			name = FYNetworkDemoUITests;
-			productName = FYNetworkDemoUITests;
-			productReference = 84B9F6D41FDA39C900F5AC27 /* FYNetworkDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,16 +181,6 @@
 					84B9F6B01FDA39C900F5AC27 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					84B9F6C81FDA39C900F5AC27 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 84B9F6B01FDA39C900F5AC27;
-					};
-					84B9F6D31FDA39C900F5AC27 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 84B9F6B01FDA39C900F5AC27;
 					};
 				};
 			};
@@ -227,8 +198,6 @@
 			projectRoot = "";
 			targets = (
 				84B9F6B01FDA39C900F5AC27 /* FYNetworkDemo */,
-				84B9F6C81FDA39C900F5AC27 /* FYNetworkDemoTests */,
-				84B9F6D31FDA39C900F5AC27 /* FYNetworkDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,20 +213,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B9F6C71FDA39C900F5AC27 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B9F6D21FDA39C900F5AC27 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,40 +222,13 @@
 			files = (
 				84B9F6B91FDA39C900F5AC27 /* ViewController.m in Sources */,
 				84B9F6C41FDA39C900F5AC27 /* main.m in Sources */,
+				84B9F6EC1FDA622400F5AC27 /* FYAFNetworkingClient.m in Sources */,
 				84B9F6B61FDA39C900F5AC27 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B9F6C51FDA39C900F5AC27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84B9F6CE1FDA39C900F5AC27 /* FYNetworkDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B9F6D01FDA39C900F5AC27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84B9F6D91FDA39C900F5AC27 /* FYNetworkDemoUITests.m in Sources */,
+				84B9F6EF1FDA672100F5AC27 /* FYNetworkHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84B9F6CB1FDA39C900F5AC27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84B9F6B01FDA39C900F5AC27 /* FYNetworkDemo */;
-			targetProxy = 84B9F6CA1FDA39C900F5AC27 /* PBXContainerItemProxy */;
-		};
-		84B9F6D61FDA39C900F5AC27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84B9F6B01FDA39C900F5AC27 /* FYNetworkDemo */;
-			targetProxy = 84B9F6D51FDA39C900F5AC27 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84B9F6BA1FDA39C900F5AC27 /* Main.storyboard */ = {
@@ -432,9 +360,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FYNetworkDemo/AFNetworking",
+				);
 				INFOPLIST_FILE = FYNetworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,69 +380,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FYNetworkDemo/AFNetworking",
+				);
 				INFOPLIST_FILE = FYNetworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		84B9F6E11FDA39C900F5AC27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZBFGYZT9D6;
-				INFOPLIST_FILE = FYNetworkDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYNetworkDemo.app/FYNetworkDemo";
-			};
-			name = Debug;
-		};
-		84B9F6E21FDA39C900F5AC27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZBFGYZT9D6;
-				INFOPLIST_FILE = FYNetworkDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYNetworkDemo.app/FYNetworkDemo";
-			};
-			name = Release;
-		};
-		84B9F6E41FDA39C900F5AC27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZBFGYZT9D6;
-				INFOPLIST_FILE = FYNetworkDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FYNetworkDemo;
-			};
-			name = Debug;
-		};
-		84B9F6E51FDA39C900F5AC27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZBFGYZT9D6;
-				INFOPLIST_FILE = FYNetworkDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYNetworkDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FYNetworkDemo;
 			};
 			name = Release;
 		};
@@ -529,24 +411,6 @@
 			buildConfigurations = (
 				84B9F6DE1FDA39C900F5AC27 /* Debug */,
 				84B9F6DF1FDA39C900F5AC27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84B9F6E01FDA39C900F5AC27 /* Build configuration list for PBXNativeTarget "FYNetworkDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84B9F6E11FDA39C900F5AC27 /* Debug */,
-				84B9F6E21FDA39C900F5AC27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84B9F6E31FDA39C900F5AC27 /* Build configuration list for PBXNativeTarget "FYNetworkDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84B9F6E41FDA39C900F5AC27 /* Debug */,
-				84B9F6E51FDA39C900F5AC27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
